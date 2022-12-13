@@ -1,0 +1,13 @@
+Name: AlarmsVariables
+Type: FolderType
+Children:
+- Name: RotaryFillerHead3
+  Id: g=ec93de2566b42c08be0d6b7bd4efd8aa
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: InletTank
+  Id: g=4bc713882cda66781e6f7e7d0f47a440
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0

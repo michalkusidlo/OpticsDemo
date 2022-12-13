@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module version="1">
+    <Name>ROKLive2022_FinishedUserDefinedModule</Name>
+    <Company></Company>
+    <Version>0.0.0</Version>
+    <MinUpgradableVersion>0.0.0</MinUpgradableVersion>
+    <Binding name="Net" />
+
+    <Namespaces/>
+
+    <Dependencies>
+        <Core version="0.0.0" />
+        <Binding version="0.0.0" />
+        <Module name="FTOptix.HMIProject.Net" version="0.0.0" />
+    </Dependencies>
+
+    <Nodes/>
+
+    <TypeMappings>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="ROKLive2022_Finished" guid="134883bd04927949f78136fb302f4678" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="ROKLive2022_Finished" guid="577a863c1328fbfb036b04c7e34e1036" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="ROKLive2022_Finished" guid="d1a3b6babc2c2831a542f6ffa2fa86b6" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="ROKLive2022_Finished" guid="0b1cf004a7d4e9d884b13a8814252d78" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="ROKLive2022_Finished" guid="cb0b095e91b091027e2665694770294e" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="ROKLive2022_Finished" guid="32a859c8eb931948e9d22ec462e79683" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="ROKLive2022_Finished" guid="0484c537c507851ffc47085d73e38f3b" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="ROKLive2022_Finished" guid="938c8b9c7f448f57704e6b0cfbdd360f" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="ROKLive2022_Finished" guid="3abd95e1a615934bf51420e8d1b473a1" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="ROKLive2022_Finished" guid="72001b9a38f4d07ab4edb2f45fad6e30" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="ROKLive2022_Finished" guid="7e0e3770ecbbc53bee2ea413e29b8c08" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="ROKLive2022_Finished" guid="1d62eb15fb9c19358829ca913b7010ad" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="ROKLive2022_Finished" guid="89a0186846455be82ee6e0a07bf0bafa" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="ROKLive2022_Finished" guid="c25f9c67684806cdf38807bc351df8ad" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="ROKLive2022_Finished" guid="9e329d7c9535d2eaa4e8a087285b7deb" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="ROKLive2022_Finished" guid="addfa288219b4ab31ff437ca11d03304" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="ROKLive2022_Finished" guid="c3f23eee8238c726b9458873bf0c9bae" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="ROKLive2022_Finished" guid="23eadcc3bc2d2c87e765e2aee4f5d5ac" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="ROKLive2022_Finished" guid="43c05b13f70e0854f34912e1874981f2" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="ROKLive2022_Finished" guid="6d3d51330dfa5344420b23748e5d6b9d" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="ROKLive2022_Finished" guid="04889149ba1d401713fdb5ca154f1498" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="ROKLive2022_Finished" guid="eca59f0bcee3f22d4c4584875e487bf8" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="ROKLive2022_Finished" guid="85ef7a3d5ce93f34f0a66c486d044bd0" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="ROKLive2022_Finished" guid="8685e8b5d693e1fb7cad535e903d31a8" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="ROKLive2022_Finished" guid="162020ee1ea07c30ae49679d2c84a099" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="ROKLive2022_Finished" guid="d5b3e527fb47297d683aa59f796297de" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="ROKLive2022_Finished" guid="1f4c0bf7409181e473a48723e099d56a" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="ROKLive2022_Finished" guid="00856c7221c327d5249b98475b4d90f4" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="ROKLive2022_Finished" guid="01c576932b40e3e9e93c7fd640d7416b" />
+            </TargetType>
+        </TypeMapping>
+    </TypeMappings>
+</Module>

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "ROKLive2022_Finished/1.0.0": {
+        "runtime": {
+          "ROKLive2022_Finished.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ROKLive2022_Finished/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

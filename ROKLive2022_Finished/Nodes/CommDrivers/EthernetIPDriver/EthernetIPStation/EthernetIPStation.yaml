@@ -1,0 +1,2810 @@
+Name: EthernetIPStation
+Id: g=346f841a8bed76bdc1453d634a3e2b43
+Type: EthernetIPDriverStation
+Children:
+- Name: MaximumJobSizeInBytes
+  Type: BaseDataVariableType
+  DataType: UInt32
+  Value: 504
+- Name: IPAddress
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "192.168.1.20"
+- Name: Port
+  Type: BaseDataVariableType
+  DataType: UInt16
+  Value: 44818
+- Name: Timeout
+  Type: BaseDataVariableType
+  DataType: Duration
+  Value: "0:00:01:0.0000000"
+- Name: PhysicalAddressOptimization
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: OperationCode
+  Type: BaseDataVariableType
+  DataType: CommunicationOperationCode
+  AccessLevel: Read
+  Value: 0
+- Class: Reference
+  Target: ns=25;i=29
+  Direction: Forward
+- Class: Reference
+  Target: ns=25;i=30
+  Direction: Forward
+- Class: Reference
+  Target: ns=25;i=67
+  Direction: Forward
+- Class: Reference
+  Target: ns=25;i=31
+  Direction: Forward
+- Class: Reference
+  Target: ns=25;i=94
+  Direction: Forward
+- Class: Reference
+  Target: ns=25;i=96
+  Direction: Forward
+- File: Tags/Tags.yaml
+- Name: Types
+  Type: BaseObjectType
+  Children:
+  - Name: P_Motor1
+    Id: g=68e0567c485c48f25c89cccd72c1d7e9
+    Supertype: TagStructure
+    Children:
+    - Name: EnableIn
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableIn"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: EnableOut
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableOut"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Inp_RunFdbk
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Inp_RunFdbk"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Inp_PermOK
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Inp_PermOK"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Inp_NBPermOK
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Inp_NBPermOK"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Inp_IntlkOK
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Inp_IntlkOK"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Inp_NBIntlkOK
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Inp_NBIntlkOK"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Inp_IOFault
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Inp_IOFault"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Inp_Sim
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Inp_Sim"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Inp_Hand
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Inp_Hand"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Inp_Ovrd
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Inp_Ovrd"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Inp_OvrdCmd
+      Type: EthernetIPDriverTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Inp_OvrdCmd"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Inp_Reset
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Inp_Reset"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Cfg_HasRunFdbk
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cfg_HasRunFdbk"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Cfg_UseRunFdbk
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cfg_UseRunFdbk"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Cfg_AllowLocal
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cfg_AllowLocal"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Cfg_HasPermObj
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cfg_HasPermObj"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Cfg_HasIntlkObj
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cfg_HasIntlkObj"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Cfg_HasResInhObj
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cfg_HasResInhObj"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Cfg_HasRunTimeObj
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cfg_HasRunTimeObj"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Cfg_HasOvldObj
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cfg_HasOvldObj"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Cfg_PCmdClear
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cfg_PCmdClear"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Cfg_ProgDefault
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cfg_ProgDefault"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Cfg_OperStopPrio
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cfg_OperStopPrio"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Cfg_OCmdResets
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cfg_OCmdResets"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Cfg_OvrdPermIntlk
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cfg_OvrdPermIntlk"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Cfg_ShedOnFailToStart
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cfg_ShedOnFailToStart"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Cfg_ShedOnIOFault
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cfg_ShedOnIOFault"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Cfg_HasFailToStartAlm
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cfg_HasFailToStartAlm"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Cfg_HasFailToStopAlm
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cfg_HasFailToStopAlm"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Cfg_HasIntlkTripAlm
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cfg_HasIntlkTripAlm"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Cfg_HasIOFaultAlm
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cfg_HasIOFaultAlm"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Cfg_FailToStartResetReqd
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cfg_FailToStartResetReqd"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Cfg_FailToStopResetReqd
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cfg_FailToStopResetReqd"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Cfg_IntlkTripResetReqd
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cfg_IntlkTripResetReqd"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Cfg_IOFaultResetReqd
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cfg_IOFaultResetReqd"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Cfg_FailToStartAckReqd
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cfg_FailToStartAckReqd"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Cfg_FailToStopAckReqd
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cfg_FailToStopAckReqd"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Cfg_IntlkTripAckReqd
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cfg_IntlkTripAckReqd"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Cfg_IOFaultAckReqd
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cfg_IOFaultAckReqd"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Cfg_FailToStartSeverity
+      Type: EthernetIPDriverTag
+      DataType: SByte
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cfg_FailToStartSeverity"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Cfg_FailToStopSeverity
+      Type: EthernetIPDriverTag
+      DataType: SByte
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cfg_FailToStopSeverity"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Cfg_IntlkTripSeverity
+      Type: EthernetIPDriverTag
+      DataType: SByte
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cfg_IntlkTripSeverity"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Cfg_IOFaultSeverity
+      Type: EthernetIPDriverTag
+      DataType: SByte
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cfg_IOFaultSeverity"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Cfg_SimFdbkT
+      Type: EthernetIPDriverTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cfg_SimFdbkT"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Cfg_FailToStartT
+      Type: EthernetIPDriverTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cfg_FailToStartT"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Cfg_FailToStopT
+      Type: EthernetIPDriverTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cfg_FailToStopT"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: PSet_Owner
+      Type: EthernetIPDriverTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "PSet_Owner"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: PCmd_Start
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "PCmd_Start"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: PCmd_Stop
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "PCmd_Stop"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: PCmd_Acq
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "PCmd_Acq"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: PCmd_Rel
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "PCmd_Rel"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: PCmd_Lock
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "PCmd_Lock"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: PCmd_Unlock
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "PCmd_Unlock"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: PCmd_Reset
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "PCmd_Reset"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: PCmd_FailToStartAck
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "PCmd_FailToStartAck"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: PCmd_FailToStartSuppress
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "PCmd_FailToStartSuppress"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: PCmd_FailToStartUnsuppress
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "PCmd_FailToStartUnsuppress"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: PCmd_FailToStartUnshelve
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "PCmd_FailToStartUnshelve"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: PCmd_FailToStopAck
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "PCmd_FailToStopAck"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: PCmd_FailToStopSuppress
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "PCmd_FailToStopSuppress"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: PCmd_FailToStopUnsuppress
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "PCmd_FailToStopUnsuppress"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: PCmd_FailToStopUnshelve
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "PCmd_FailToStopUnshelve"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: PCmd_IntlkTripAck
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "PCmd_IntlkTripAck"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: PCmd_IntlkTripSuppress
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "PCmd_IntlkTripSuppress"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: PCmd_IntlkTripUnsuppress
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "PCmd_IntlkTripUnsuppress"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: PCmd_IntlkTripUnshelve
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "PCmd_IntlkTripUnshelve"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: PCmd_IOFaultAck
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "PCmd_IOFaultAck"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: PCmd_IOFaultSuppress
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "PCmd_IOFaultSuppress"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: PCmd_IOFaultUnsuppress
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "PCmd_IOFaultUnsuppress"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: PCmd_IOFaultUnshelve
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "PCmd_IOFaultUnshelve"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: OCmd_Start
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "OCmd_Start"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: OCmd_Stop
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "OCmd_Stop"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: OCmd_Bypass
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "OCmd_Bypass"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: OCmd_Check
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "OCmd_Check"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: MCmd_Disable
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "MCmd_Disable"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: MCmd_Enable
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "MCmd_Enable"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: OCmd_AcqLock
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "OCmd_AcqLock"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: OCmd_Unlock
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "OCmd_Unlock"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: OCmd_Reset
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "OCmd_Reset"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: OCmd_ResetAckAll
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "OCmd_ResetAckAll"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Out_Run
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Out_Run"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Out_Start
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Out_Start"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Out_Stop
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Out_Stop"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Val_Cmd
+      Type: EthernetIPDriverTag
+      DataType: SByte
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_Cmd"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Val_Fdbk
+      Type: EthernetIPDriverTag
+      DataType: SByte
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_Fdbk"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Val_Sts
+      Type: EthernetIPDriverTag
+      DataType: SByte
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_Sts"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Val_Fault
+      Type: EthernetIPDriverTag
+      DataType: SByte
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_Fault"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Val_Mode
+      Type: EthernetIPDriverTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_Mode"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Val_Owner
+      Type: EthernetIPDriverTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_Owner"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Sts_Stopped
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Stopped"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Sts_Starting
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Starting"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Sts_Running
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Running"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Sts_Stopping
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Stopping"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Sts_Available
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Available"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Sts_Bypass
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Bypass"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Sts_BypActive
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_BypActive"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Sts_Disabled
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Disabled"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Sts_NotRdy
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_NotRdy"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Sts_MaintByp
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_MaintByp"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Sts_AlmInh
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_AlmInh"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Sts_Err
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Err"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Err_Timer
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Err_Timer"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Err_Sim
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Err_Sim"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Err_Alarm
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Err_Alarm"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Sts_Hand
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Hand"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Sts_Maint
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Maint"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Sts_Ovrd
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Ovrd"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Sts_Prog
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Prog"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Sts_Oper
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Oper"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Sts_ProgOperLock
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_ProgOperLock"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Sts_NoMode
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_NoMode"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Sts_FailToStart
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_FailToStart"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Alm_FailToStart
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Alm_FailToStart"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Ack_FailToStart
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Ack_FailToStart"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Sts_FailToStartDisabled
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_FailToStartDisabled"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Sts_FailToStartShelved
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_FailToStartShelved"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Sts_FailToStartSuppressed
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_FailToStartSuppressed"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Sts_FailToStop
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_FailToStop"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Alm_FailToStop
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Alm_FailToStop"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Ack_FailToStop
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Ack_FailToStop"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Sts_FailToStopDisabled
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_FailToStopDisabled"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Sts_FailToStopShelved
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_FailToStopShelved"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Sts_FailToStopSuppressed
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_FailToStopSuppressed"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Sts_IntlkTrip
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_IntlkTrip"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Alm_IntlkTrip
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Alm_IntlkTrip"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Ack_IntlkTrip
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Ack_IntlkTrip"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Sts_IntlkTripDisabled
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_IntlkTripDisabled"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Sts_IntlkTripShelved
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_IntlkTripShelved"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Sts_IntlkTripSuppressed
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_IntlkTripSuppressed"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Sts_IOFault
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_IOFault"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Alm_IOFault
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Alm_IOFault"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Ack_IOFault
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Ack_IOFault"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Sts_IOFaultDisabled
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_IOFaultDisabled"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Sts_IOFaultShelved
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_IOFaultShelved"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Sts_IOFaultSuppressed
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_IOFaultSuppressed"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Rdy_Start
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Rdy_Start"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Rdy_Stop
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Rdy_Stop"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Rdy_Bypass
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Rdy_Bypass"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Rdy_Check
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Rdy_Check"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Rdy_Disable
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Rdy_Disable"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Rdy_Enable
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Rdy_Enable"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Rdy_Reset
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Rdy_Reset"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Rdy_ResetAckAll
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Rdy_ResetAckAll"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: P_Motor
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "P_Motor"
+      - Name: Quality
+        Type: BaseDataVariableType
+        DataType: ns=25;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384

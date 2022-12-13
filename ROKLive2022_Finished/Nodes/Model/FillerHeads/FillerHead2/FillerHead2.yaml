@@ -1,0 +1,183 @@
+Name: FillerHead2
+Type: FolderType
+Children:
+- Name: bottleClampPressureSetpoint
+  Id: g=22c5e057d7959530dcee3e9bedf8e514
+  Type: BaseDataVariableType
+  DataType: Int32
+  DisplayName: {"NamespaceIndex":34,"TextId":"bottleClampPressureSetpoint"}
+  Value: 0
+  Children:
+  - Name: ns=0;EngineeringUnits
+    Type: EUInformationType
+    DataType: EUInformation
+    Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+    Children:
+    - Name: UnitId
+      Type: BaseVariableType
+      DataType: Int32
+      ReferenceType: HasProperty
+      Value: 4342098
+    - Name: DisplayName
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    - Name: Description
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+  - Name: DynamicLink
+    Type: DataBind
+    DataType: NodePath
+    Value: "../../../../CommDrivers/EthernetIPDriver/EthernetIPStation/Tags/Program&:Filler_Heads2/Bottle_Clamp_Pressure_SP_2"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DataBindModeType
+      Value: 2
+- Name: bottleClampPressureActual
+  Id: g=72807229f77f5db5f780c7e17da1af7a
+  Type: BaseDataVariableType
+  DataType: Int32
+  DisplayName: {"NamespaceIndex":34,"TextId":"bottleClampPressureActual"}
+  Value: 0
+  Children:
+  - Name: ns=0;EngineeringUnits
+    Type: EUInformationType
+    DataType: EUInformation
+    Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+    Children:
+    - Name: UnitId
+      Type: BaseVariableType
+      DataType: Int32
+      ReferenceType: HasProperty
+      Value: 4342098
+    - Name: DisplayName
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    - Name: Description
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+  - Name: DynamicLink
+    Type: DataBind
+    DataType: NodePath
+    Value: "../../../../CommDrivers/EthernetIPDriver/EthernetIPStation/Tags/Program&:Filler_Heads2/Bottle_Clamp_Pressure_actual_2"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DataBindModeType
+      Value: 2
+- Name: bottleSlowFillSetpoint
+  Id: g=3d4d31d625736ffb8a0bc85c04e66704
+  Type: BaseDataVariableType
+  DataType: Int32
+  DisplayName: {"NamespaceIndex":34,"TextId":"bottleSlowFillSetpoint"}
+  Value: 0
+  Children:
+  - Name: ns=0;EngineeringUnits
+    Type: EUInformationType
+    DataType: EUInformation
+    Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+    Children:
+    - Name: UnitId
+      Type: BaseVariableType
+      DataType: Int32
+      ReferenceType: HasProperty
+      Value: 5065812
+    - Name: DisplayName
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    - Name: Description
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+  - Name: DynamicLink
+    Type: DataBind
+    DataType: NodePath
+    Value: "../../../../CommDrivers/EthernetIPDriver/EthernetIPStation/Tags/Program&:Filler_Heads2/Bottle_Slow_Fill_SP_2"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DataBindModeType
+      Value: 2
+- Name: bottleStopFillSetpoint
+  Id: g=160f4bfde3486cec832abd769fea9d78
+  Type: BaseDataVariableType
+  DataType: Int32
+  DisplayName: {"NamespaceIndex":34,"TextId":"bottleStopFillSetpoint"}
+  Value: 0
+  Children:
+  - Name: ns=0;EngineeringUnits
+    Type: EUInformationType
+    DataType: EUInformation
+    Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+    Children:
+    - Name: UnitId
+      Type: BaseVariableType
+      DataType: Int32
+      ReferenceType: HasProperty
+      Value: 5065812
+    - Name: DisplayName
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    - Name: Description
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+  - Name: DynamicLink
+    Type: DataBind
+    DataType: NodePath
+    Value: "../../../../CommDrivers/EthernetIPDriver/EthernetIPStation/Tags/Program&:Filler_Heads2/Bottle_Fill_Stop_SP_2"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DataBindModeType
+      Value: 2
+- Name: bottleActualLevel
+  Id: g=6ddd769026b4ef1b361a977f458ce1d4
+  Type: BaseDataVariableType
+  DataType: Int32
+  DisplayName: {"NamespaceIndex":34,"TextId":"bottleActualLevel"}
+  Value: 0
+  Children:
+  - Name: ns=0;EngineeringUnits
+    Type: EUInformationType
+    DataType: EUInformation
+    Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+    Children:
+    - Name: UnitId
+      Type: BaseVariableType
+      DataType: Int32
+      ReferenceType: HasProperty
+      Value: 5065812
+    - Name: DisplayName
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    - Name: Description
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+  - Name: DynamicLink
+    Type: DataBind
+    DataType: NodePath
+    Value: "../../../../CommDrivers/EthernetIPDriver/EthernetIPStation/Tags/Program&:Filler_Heads2/Bottle_level_actual_2"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DataBindModeType
+      Value: 2

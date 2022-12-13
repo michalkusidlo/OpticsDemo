@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "8i9bHwS+64xQi+RHJZiQl8L5codnqBHDw4PjMOcLpqqTirZQqVZEej1HotVv/f/+UzsuctbKjwTkEThOSX1s8A==",
+  "success": true,
+  "projectFilePath": "C:\\Lab Files\\FT Optix Project\\Finished\\ROKLive2022_Finished\\ProjectFiles\\NetSolution\\ROKLive2022_Finished.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Labuser\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Labuser\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Labuser\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

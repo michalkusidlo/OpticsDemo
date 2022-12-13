@@ -1,0 +1,273 @@
+Name: Tank
+Type: FolderType
+Children:
+- Name: flowMeter
+  Id: g=6b915454a9129d8190b0d5f2088ac130
+  Type: AnalogItemType
+  DataType: Float
+  DisplayName: {"LocaleId":"en-US","Text":"FI101"}
+  Value: 15.0
+  Children:
+  - Name: EURange
+    Type: RangeType
+    DataType: EURange
+    Value: {"TypeId":{"Id":884},"Body":{"low":0.0,"high":0.0}}
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 0.0
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 15.0
+  - Name: EngineeringUnits
+    Type: EUInformationType
+    DataType: EUInformation
+    Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+    Children:
+    - Name: UnitId
+      Type: BaseVariableType
+      DataType: Int32
+      ReferenceType: HasProperty
+      Value: 5067080
+    - Name: DisplayName
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    - Name: Description
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+  - Name: DynamicLink
+    Type: DataBind
+    DataType: NodePath
+    Value: "../../../CommDrivers/EthernetIPDriver/EthernetIPStation/Tags/FI101"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DataBindModeType
+      Value: 2
+- Name: temperatureSensor
+  Id: g=449a09a6d7a109dd3e616c16379a2c6c
+  Type: AnalogItemType
+  DataType: Float
+  DisplayName: {"LocaleId":"en-US","Text":"TI101"}
+  Value: 16.0
+  Children:
+  - Name: EURange
+    Type: RangeType
+    DataType: EURange
+    Value: {"TypeId":{"Id":884},"Body":{"low":0.0,"high":0.0}}
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 0.0
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 120.0
+  - Name: EngineeringUnits
+    Type: EUInformationType
+    DataType: EUInformation
+    Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+    Children:
+    - Name: UnitId
+      Type: BaseVariableType
+      DataType: Int32
+      ReferenceType: HasProperty
+      Value: 4408652
+    - Name: DisplayName
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    - Name: Description
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+  - Name: DynamicLink
+    Type: DataBind
+    DataType: NodePath
+    Value: "../../../CommDrivers/EthernetIPDriver/EthernetIPStation/Tags/TI101"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DataBindModeType
+      Value: 2
+- Name: levelProbe
+  Id: g=eeceebd1da66055705167cbb63963e75
+  Type: AnalogItemType
+  DataType: Float
+  DisplayName: {"LocaleId":"en-US","Text":"LI101"}
+  Value: 10.0
+  Children:
+  - Name: EURange
+    Type: RangeType
+    DataType: EURange
+    Value: {"TypeId":{"Id":884},"Body":{"low":0.0,"high":0.0}}
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 0.0
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 120.0
+  - Name: EngineeringUnits
+    Type: EUInformationType
+    DataType: EUInformation
+    Value: {"TypeId":{"Id":887},"Body":{"namespaceUri":"","unitId":0,"displayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}
+    Children:
+    - Name: UnitId
+      Type: BaseVariableType
+      DataType: Int32
+      ReferenceType: HasProperty
+      Value: 5002322
+    - Name: DisplayName
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    - Name: Description
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+  - Name: DynamicLink
+    Type: DataBind
+    DataType: NodePath
+    Value: "../../../CommDrivers/EthernetIPDriver/EthernetIPStation/Tags/LI101"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DataBindModeType
+      Value: 2
+- Name: motorCommandRun
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: true
+  Children:
+  - Name: DynamicLink
+    Type: DataBind
+    DataType: NodePath
+    Value: "../../../CommDrivers/EthernetIPDriver/EthernetIPStation/Tags/MyP_Motor/Out_Run"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DataBindModeType
+      Value: 2
+- Name: motorCommandStart
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: DynamicLink
+    Type: DataBind
+    DataType: NodePath
+    Value: "../../../CommDrivers/EthernetIPDriver/EthernetIPStation/Tags/MyP_Motor/Out_Start"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DataBindModeType
+      Value: 2
+- Name: motorCommandStop
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: DynamicLink
+    Type: DataBind
+    DataType: NodePath
+    Value: "../../../CommDrivers/EthernetIPDriver/EthernetIPStation/Tags/MyP_Motor/Out_Stop"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DataBindModeType
+      Value: 2
+- Name: motorStatusStopped
+  Id: g=348ac5c64b345d35390e603f1985efa6
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: DynamicLink
+    Type: DataBind
+    DataType: NodePath
+    Value: "../../../CommDrivers/EthernetIPDriver/EthernetIPStation/Tags/MyP_Motor/Sts_Stopped"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DataBindModeType
+      Value: 2
+- Name: motorStatusStarting
+  Id: g=c5bb26b41be97981619c36aaad7da841
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: DynamicLink
+    Type: DataBind
+    DataType: NodePath
+    Value: "../../../CommDrivers/EthernetIPDriver/EthernetIPStation/Tags/MyP_Motor/Sts_Starting"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DataBindModeType
+      Value: 2
+- Name: motorStatusRunning
+  Id: g=21624e4d2d6bcfac46c3e28411a2abd7
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: true
+  Children:
+  - Name: DynamicLink
+    Type: DataBind
+    DataType: NodePath
+    Value: "../../../CommDrivers/EthernetIPDriver/EthernetIPStation/Tags/MyP_Motor/Sts_Running"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DataBindModeType
+      Value: 2
+- Name: motorStatusStopping
+  Id: g=bdd954a4be40bfb8ef4273c89bd5639f
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: DynamicLink
+    Type: DataBind
+    DataType: NodePath
+    Value: "../../../CommDrivers/EthernetIPDriver/EthernetIPStation/Tags/MyP_Motor/Sts_Stopping"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DataBindModeType
+      Value: 2
+- Name: motorStatusError
+  Id: g=9119fa47824fade871e369bd74116877
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: DynamicLink
+    Type: DataBind
+    DataType: NodePath
+    Value: "../../../CommDrivers/EthernetIPDriver/EthernetIPStation/Tags/MyP_Motor/Sts_Err"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DataBindModeType
+      Value: 2
